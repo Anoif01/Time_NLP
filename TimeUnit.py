@@ -548,7 +548,7 @@ class TimeUnit:
         :return:
         """
 
-        cur = arrow.get(arrow.now().to(tz="Asia/shanghai"))
+        cur = arrow.get(arrow.now().to(tz="Asia/Shanghai"))
         flag = [False, False, False]
 
         rule = u"\\d+(?=天[以之]?前)"
@@ -765,7 +765,7 @@ class TimeUnit:
         """
         # 这一块还是用了断言表达式
         # 昨天、今天、明天等表述不需要调用前置时间，而是直接使用当前时刻的相对时间进行计算
-        cur = arrow.get(arrow.now().to(tz="Asia/shanghai"))
+        cur = arrow.get(arrow.now().to(tz="Asia/Shanghai"))
         flag = [False, False, False]
 
         rule = u"前年"
